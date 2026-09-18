@@ -1,0 +1,12 @@
+class BankAccount:
+    send_fee=10
+a=BankAccount()
+b=BankAccount()
+c=BankAccount()
+print(a.send_fee)
+print(b.send_fee)
+print(c.send_fee)
+BankAccount.send_fee=15
+print(a.send_fee)
+print(b.send_fee)
+print(c.send_fee)
