@@ -1,7 +1,9 @@
-class MyClass:
-    x=5
+class Person:
+ def __init__(self,name,age):
+  self.name=name
+  self.age=age
+ def greet(self):
+    print("Hello, my name is ",self.name )
 
-s1=MyClass()
-s2=MyClass()
-del s1
-print(s1.x)
+p1=Person("John", 36) 
+p1.greet()
